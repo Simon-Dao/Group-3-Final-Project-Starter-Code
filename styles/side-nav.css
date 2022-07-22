@@ -1,0 +1,40 @@
+#side-nav {
+
+    position: relative;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-sizing: border-box;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#side-nav li {
+    width: auto;
+    height: 60px;
+    margin: 10px 0px;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media (orientation: portrait) {
+    #side-nav {
+        transition: 300ms ease;
+        min-width: 0px;
+        width: 0px;
+        padding: 0;
+    }
+
+    #side-nav li {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    
+}
