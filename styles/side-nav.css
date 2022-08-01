@@ -26,8 +26,6 @@
     #side-nav {
         transition: 300ms ease;
         min-width: 0px;
-        width: 0px;
-        padding: 0;
     }
 
     #side-nav li {
@@ -36,5 +34,12 @@
 }
 
 @media (orientation: landscape) {
-    
+    #side-nav {
+        transition: 300ms ease;
+        min-width: 200px;
+    }
+
+    #side-nav li {
+        display: block;
+    }
 }

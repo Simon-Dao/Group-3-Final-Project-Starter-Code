@@ -44,12 +44,24 @@ hiddenNavButton.addEventListener('click', toggleNavBar)
 
 
 //makes sure that the side bar reappears again when window in back to landscape
+
 window
     .matchMedia('(orientation: landscape)')
     .addListener(function (m) {
-        if (!m.matches) return
+        if (!m.matches) {
+
+            navItems.forEach(navItem => {
+                navItem.style.display = 'none'
+            })
+            sideNav.style.minWidth = '0px'
+
+            return
+        }
         
         console.log('changed')
+
+        navItems.forEach(navItem => {
             navItem.style.display = 'block'
+        })
         sideNav.style.minWidth = '200px'
 });
