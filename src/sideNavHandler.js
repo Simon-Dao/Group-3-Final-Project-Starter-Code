@@ -1,7 +1,6 @@
-const navItems = document.querySelectorAll('#side-nav li')
+const navItems = document.querySelectorAll('.nav-item')
 const hiddenNavButton = document.querySelector('#hidden-nav-button')
 const sideNav = document.querySelector('#side-nav')
-const sideNavItems = document.querySelectorAll('#side-nav li')
 
 let selectedIndex = 0
 
@@ -31,8 +30,7 @@ function toggleNavBar() {
     }
     
     sideNav.style.minWidth = sideNav.style.minWidth === '0px' ? '100px' : '0px'
-    
-    sideNavItems.forEach(function(navItem) {
+    navItems.forEach(function(navItem) {
         //if(navItem.style.display === '') navItem.style.display = 'none'
 
 
@@ -58,8 +56,7 @@ window
             return
         }
         
-        console.log('changed')
-
+90
         navItems.forEach(navItem => {
             navItem.style.display = 'block'
         })

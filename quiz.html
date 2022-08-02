@@ -24,99 +24,55 @@
         
         <nav id="side-nav" class="backgroundPrimary">
             <a href="index.html">
-                <li class="backgroundPrimary textPrimary">Article</li>
+                <li class="nav-item backgroundPrimary textPrimary">Article</li>
             </a>
             <a href="quiz.html">
-                <li class="backgroundPrimary textPrimary">Quiz</li>
+                <li class="nav-item backgroundPrimary textPrimary">Quiz</li>
             </a>
-            <a href="quiz.html">
-                <li class="backgroundPrimary textPrimary">Quiz</li>
-            </a>
+            
         </nav>
         
         <main class="backgroundSecondary">
-
-            <button id="hidden-nav-button" class="buttonPrimary textPrimary">Open Nav</button>
-
-            <div class="quiz-container">
-                <!--------COPY THIS TO MAKE 1 FREE RESPONSE QUESTION CHOICE SECTION--------------------------------------------------------------->
-                <section class="free-response-container ">
-                    <!-------------------------------NOTHING IN HERE FOR NOW---------------------------------------------->
-                </section>
-                <!---------------------------------------------------------------------------------->
-
-                <!--------COPY THIS TO MAKE 1 MULTIPLE CHOICE SECTION--------------------------------------------------------------->
-                <section class="multiple-choice-container">
-
-                    <h1 class="subtitle textPrimary">What is Obama's last name?</h1>
-                    <div class="button-container">
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">A</p>
-                            <p class="textPrimary">Obama</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">B</p>
-                            <p class="textPrimary">Barrack</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">C</p>
-                            <p class="textPrimary">Trump</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">D</p>
-                            <p class="textPrimary">IDK</p>
-                        </button>
-                    </div>
-                </section>
-                <!---------------------------------------------------------------------------------->
-                <section class="multiple-choice-container">
-
-                    <h1 class="subtitle textPrimary">What is Obama's last name?</h1>
-                    <div class="button-container">
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">A</p>
-                            <p class="textPrimary">Obama</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">B</p>
-                            <p class="textPrimary">Barrack</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">C</p>
-                            <p class="textPrimary">Trump</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">D</p>
-                            <p class="textPrimary">IDK</p>
-                        </button>
-                    </div>
-                </section>
-                <section class="multiple-choice-container">
-
-                    <h1 class="subtitle textPrimary">What is Obama's last name?</h1>
-                    <div class="button-container">
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">A</p>
-                            <p class="textPrimary">Obama</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">B</p>
-                            <p class="textPrimary">Barrack</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">C</p>
-                            <p class="textPrimary">Trump</p>
-                        </button>
-                        <button class="quiz-button buttonPrimary">
-                            <p class="textPrimary">D</p>
-                            <p class="textPrimary">IDK</p>
-                        </button>
-                    </div>
-                </section>
+            <div class="scroll-container">
+                <button id="hidden-nav-button" class="buttonPrimary textPrimary">Nav</button>
+                <div class="quiz-container">
+                    <!--------COPY THIS TO MAKE 1 FREE RESPONSE QUESTION CHOICE SECTION--------------------------------------------------------------->
+                    <section class="free-response-container ">
+                        <!-------------------------------NOTHING IN HERE FOR NOW---------------------------------------------->
+                    </section>
+                    <!---------------------------------------------------------------------------------->
+    
+                    <!--------COPY THIS TO MAKE 1 MULTIPLE CHOICE SECTION--------------------------------------------------------------->
+                    <section class="multiple-choice-container">
+    
+                        <h1 class="subtitle textPrimary">What is Obama's last name?</h1>
+                        <div class="button-container">
+                            <button class="quiz-button buttonPrimary">
+                                <p class="textPrimary">A</p>
+                                <p class="textPrimary">Obama</p>
+                            </button>
+                            <button class="quiz-button buttonPrimary">
+                                <p class="textPrimary">B</p>
+                                <p class="textPrimary">Barrack</p>
+                            </button>
+                            <button class="quiz-button buttonPrimary">
+                                <p class="textPrimary">C</p>
+                                <p class="textPrimary">Trump</p>
+                            </button>
+                            <button class="quiz-button buttonPrimary">
+                                <p class="textPrimary">D</p>
+                                <p class="textPrimary">IDK</p>
+                            </button>
+                        </div>
+                    </section>
+                    <!---------------------------------------------------------------------------------->
+            </div>
+            
             </div>
 
         </main>
 
+        <script src="src/generateQuestions.js"></script>
         <script src="src/sideNavHandler.js"></script>
         <script src="src/colorModesHandler.js"></script>
     </div>
